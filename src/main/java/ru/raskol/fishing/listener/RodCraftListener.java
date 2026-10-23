@@ -1,4 +1,4 @@
-package ru.raskol.fearing.listener;
+package ru.raskol.fishing.listener;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
