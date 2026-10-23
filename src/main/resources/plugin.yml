@@ -1,0 +1,18 @@
+name: RaskolFishing
+version: ${project.version}
+main: ru.raskol.fishing.RaskolFishing
+api-version: '1.21'
+author: Baltimor
+description: Fishing with licenses, rod tiers and golden fish.
+softdepend: [Towny, Vault]
+commands:
+  fish:
+    description: Fishing commands
+    usage: /fish help
+permissions:
+  fishing.use:
+    description: Use fishing rod
+    default: true
+  fishing.admin:
+    description: Fishing admin commands
+    default: op
