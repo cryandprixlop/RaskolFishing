@@ -1,10 +1,10 @@
 # ===== RaskolFishing =====
 license:
-  default-price: 500.0    # базовая цена лицензии
-  duration-days: 30       # срок действия
+  default-price: 500.0
+  duration-days: 30
 
 rod:
-  craft-success-chance: 25.0  # шанс крафта удочки (%)
+  craft-success-chance: 25.0
 
 loot:
   vanilla:
