@@ -1,0 +1,31 @@
+# ===== RaskolFishing =====
+license:
+  default-price: 500.0    # базовая цена лицензии
+  duration-days: 30       # срок действия
+
+rod:
+  craft-success-chance: 25.0  # шанс крафта удочки (%)
+
+loot:
+  vanilla:
+    golden-chance: 0.001
+    next-fragment-chance: 5.0
+    double-chance: 2.0
+    next-fragment: AMATEUR
+  amateur:
+    golden-chance: 0.002
+    next-fragment-chance: 4.0
+    double-chance: 4.0
+    next-fragment: FISHERMAN
+  fisherman:
+    golden-chance: 0.01
+    next-fragment-chance: 4.0
+    double-chance: 20.0
+    next-fragment: SEA_LUCK
+  sea_luck:
+    golden-chance: 0.5
+    double-chance: 35.0
+    triple-chance: 15.0
+    quad-chance: 10.0
+
+town-account-prefix: "town-"
