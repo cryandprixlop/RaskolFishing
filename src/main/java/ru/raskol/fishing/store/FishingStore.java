@@ -65,6 +65,8 @@ public final class FishingStore {
 
     public License get(String uuid) { return licenses.get(uuid); }
 
+    public Map<String, License> all() { return new HashMap<>(licenses); }
+
     public void issue(String uuid, String name, int days) {
         License lic = licenses.get(uuid);
         long now = System.currentTimeMillis() / 1000L;
@@ -74,7 +76,6 @@ public final class FishingStore {
             lic.name = name;
             lic.expiresAtEpochSeconds = now + (long) days * 86400L;
         } else {
-            // Продление: +30 дней от текущего момента
             long base = Math.max(now, lic.expiresAtEpochSeconds);
             lic.expiresAtEpochSeconds = base + (long) days * 86400L;
         }
